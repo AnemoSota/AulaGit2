@@ -1,3 +1,5 @@
+package AulaGit2.AulaGit2;
+
 import java.util.Scanner;
 
 public class Main{

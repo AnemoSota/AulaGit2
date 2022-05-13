@@ -1,3 +1,7 @@
+package AulaGit2.AulaGit2;
+
+import java.util.Scanner;
+
 public class pessoa {
     private String nome;
     private int idade;
@@ -43,5 +47,22 @@ class abo extends pessoa{
         this.setEmail("atos.omena@icomp.ufam.edu.br");
         this.setIdade(19);
         this.setNome("Atos Omena");
+    }
+
+    abo(Scanner s){
+        this.setEmail(s.next());
+        this.setIdade(s.nextInt());
+        this.setNome(s.nextLine());
+    }
+
+    abo(int cordas){
+        int cont;
+        this.setEmail("atos.omena@icomp.ufam.edu.br");
+        this.setIdade(19);
+        this.setNome("Atos Omena");
+
+        for(cont = 1 ; cont <= cordas ; cont++){
+            System.out.printf( "%s pulou %d cordas!" , this.getNome(), cont );
+        }
     }
 }
